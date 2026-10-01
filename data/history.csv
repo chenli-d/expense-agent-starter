@@ -1,0 +1,13 @@
+id,categories,days
+H01,lodging,4
+H02,lodging;meals,6
+H03,airfare;lodging,7
+H04,airfare;lodging;meals,9
+H05,meals,3
+H06,meals,2
+H07,mileage,2
+H08,mileage,3
+H09,airfare,5
+H10,lodging,5
+H11,meals,4
+H12,airfare;lodging,8

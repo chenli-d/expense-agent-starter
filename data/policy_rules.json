@@ -1,0 +1,10 @@
+[
+  {"id": "R1", "kind": "document", "when": {"category": "lodging"}, "requires": "itemized_hotel_receipt", "severity": "block", "message": "Lodging needs an itemized hotel receipt. A card slip alone is not accepted.", "source": "Travel Policy 3.1"},
+  {"id": "R2", "kind": "document", "when": {"category": "airfare"}, "requires": "flight_itinerary", "severity": "block", "message": "Airfare needs the flight itinerary.", "source": "Travel Policy 3.2"},
+  {"id": "R3", "kind": "document", "when": {"category": "meals"}, "requires": "meal_receipt", "severity": "block", "message": "Meals need a receipt.", "source": "Travel Policy 4.1"},
+  {"id": "R4", "kind": "document", "when": {"guests_with_meals": true}, "requires": "attendee_list", "severity": "block", "message": "Meals with clients or guests need an attendee list.", "source": "Travel Policy 4.2"},
+  {"id": "R5", "kind": "document", "when": {"international": true}, "requires": "pre_approval", "severity": "block", "message": "International trips need pre-approval.", "source": "Travel Policy 2.1"},
+  {"id": "R6", "kind": "document", "when": {"category": "mileage"}, "requires": "mileage_log", "severity": "block", "message": "Mileage needs a mileage log.", "source": "Travel Policy 5.1"},
+  {"id": "R7", "kind": "policy", "when": {"total_over": 2000}, "requires": "manager_approval", "severity": "remind", "message": "Claims over $2,000 should include manager approval.", "source": "Travel Policy 1.3"},
+  {"id": "R8", "kind": "policy", "when": {"mentions_alcohol": true}, "requires": null, "severity": "flag", "message": "Alcohol may not be reimbursable. A reviewer must decide.", "source": "Travel Policy 4.4"}
+]
