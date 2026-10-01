@@ -1,0 +1,5 @@
+pydantic>=2
+pytest
+streamlit
+google-genai
+python-dotenv
