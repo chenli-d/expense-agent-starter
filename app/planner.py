@@ -23,6 +23,10 @@ You pre-screen travel expense claims. Read the claim and return ONE JSON object:
   "reason": "..."            // one short sentence
 }
 Rules:
+- Choose categories ONLY from what the description says, e.g. hotel/nights -> lodging,
+  flight -> airfare, lunch/dinner/meal -> meals, drove/km/mileage -> mileage.
+  These are examples, not a complete list. Never infer a category from trip_type,
+  total or attachments: trip_type is always filled in, even for non-travel requests.
 - If in_scope is false: categories and checks must be empty lists.
 - If in_scope is true: at least one category; checks must include "check_documents" and
   "estimate_processing"; no duplicate checks.
